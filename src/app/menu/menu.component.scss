@@ -1,33 +1,75 @@
 header {
-    position: absolute;
-    left: 0;
-    top: 0;
+    background-color: #000;
+    position: fixed;
+    z-index: 2;
     right: 0;
-    height: 80px;
-    z-index: 1;
-    padding-left: 120px;
-    padding-right: 120px;
-
+    top: 0;
+    left: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
-
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-shadow: 0 1px 3px #fff3;
+    padding-left: 120px;
+    padding-right: 120px;
 
     a {
-        color: white;
+        margin-left: 10px;
+        font-size: 18px;
         text-decoration: none;
-        margin-left: 32px;
-        font-weight: 500;
-
-        &:hover {
-            color: rgba(255, 255, 255, 0.8);
-        }
-    }
-
-    img {
-        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 140px;
+        height: 35px;
+        border: none;
+        outline: none;
+        color: #fff;
+        background: black;
         cursor: pointer;
+        position: relative;
+        z-index: 0;
+        text-transform: uppercase;
     }
+}
+
+.btn {
+    text-decoration: none;
+    border: 1px solid rgb(146, 148, 248);
+    position: relative;
+    overflow: hidden;
+}
+
+.btn:hover {
+    box-shadow: 1px 1px 25px 10px rgba(146, 148, 248, 0.4);
+}
+
+.btn:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, rgba(146, 148, 248, 0.4), transparent);
+    transition: all 650ms;
+}
+
+.btn:hover:before {
+    left: 100%;
+}
+
+img {
+    height: 50px;
+    cursor: pointer;
+}
+
+.container-link {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .darkLinks {

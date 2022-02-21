@@ -1,0 +1,504 @@
+.container {
+    background-color: black;
+    overflow: hidden;
+}
+
+#changeDescription {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: 0.10em solid #fa2759; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: 0.15em; /* Adjust as needed */
+    animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: #fa2759;
+    }
+}
+
+@keyframes animationRight {
+    from {
+        transform: translateX(500px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes animationLeft {
+    from {
+        transform: translateX(-500px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+.container-about-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding-top: 120px;
+    height: calc(75vh - 80px);
+
+    .container-info {
+        display: block;
+        margin-right: 80px;
+        animation: animationLeft 500ms ease-in-out;
+    }
+
+    h1 {
+        font-size: 64px;
+        color: white;
+        margin-bottom: 80px;
+        
+    }
+
+    .my-name {
+        color: #fa2759;
+    }
+
+    .other-color {
+        color: #2dfcd8;
+    }
+
+    img {
+        height: 350px;
+        width: 350px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-top: 40px;
+        margin-left: 80px;
+        animation: animationRight 750ms ease-in-out;
+    }
+
+    .center {
+        width: 180px;
+        height: 60px;
+        position: absolute;
+    }
+
+    .btn {
+        width: 180px;
+        height: 60px;
+        cursor: pointer;
+        background: transparent;
+        border: 1px solid #2dfcd8;
+        color: #2dfcd8;
+        font-size: 18px;
+        border-radius: 4px;
+        outline: none;
+        transition: 500ms ease-in-out;
+    }
+
+    svg {
+        position: absolute;
+        left: 0;
+        top: 0;
+        fill: none;
+        stroke: #fff;
+        stroke-dasharray: 300 480;
+        stroke-dashoffset: 300;
+        transition: 500ms ease-in-out;
+    }
+
+    .btn:hover {
+        transition: 1s ease-in-out;
+        background: #2dfcd960;
+        color: white;
+    }
+
+    .btn:hover svg {
+        stroke-dashoffset: -480;
+    }
+
+    .btn span {
+        color: white;
+        font-size: 18px;
+        font-weight: 100;
+    }
+}
+
+.container-arrow {
+    background-color: black;
+    padding-top: 140px;
+    padding-bottom: 20px;
+    $circle-w: 100px;
+    $circle-bg: rgb(0, 0, 0);
+    $arrow-bg: #ffffff;
+    $body-bg: #000000;
+    $bezier: cubic-bezier(0.77, 0, 0.175, 1);
+    $bezier-bounce: cubic-bezier(0.87, -0.41, 0.19, 1.44);
+    $anim-timing: 3s;
+
+    html,
+    body {
+        height: 100%;
+        width: 100%;
+        text-align: center;
+    }
+    body {
+        background-color: $body-bg;
+    }
+
+    .ico {
+        margin: 0 auto;
+        text-align: center;
+        width: $circle-w;
+        height: $circle-w;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        filter: url("#goo");
+        .circle {
+            background: $circle-bg;
+            border-radius: 50%;
+            display: inline-block;
+            height: $circle-w;
+            width: $circle-w;
+
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            transform-origin: 0%;
+
+            &.circle-top {
+                height: $circle-w / 3;
+                width: $circle-w / 2.4;
+                animation: blob-1-anim $anim-timing $bezier infinite;
+                z-index: 0;
+                top: 0;
+            }
+            &.circle-bottom {
+                height: $circle-w / 3;
+                width: $circle-w / 2.4;
+                animation: blob-2-anim $anim-timing $bezier infinite;
+                z-index: 9;
+                bottom: 0px;
+            }
+        }
+
+        .st-arrow {
+            fill: $arrow-bg;
+            animation: scrolly $anim-timing $bezier forwards infinite;
+            perspective: 9000px;
+            transform: translateZ(0);
+            transform-origin: bottom;
+        }
+    }
+
+    .svg {
+        z-index: 9;
+        position: relative;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+
+    @keyframes blob-1-anim {
+        0% {
+            transform: translateX(-50%) translateY(0);
+        }
+        14% {
+            transform: translateX(-50%) translateY(-8px);
+        }
+        24% {
+            transform: translateX(-50%) translateY(0);
+        }
+        100% {
+            transform: translateX(-50%) translateY(0);
+        }
+    }
+
+    @keyframes blob-2-anim {
+        0% {
+            //transform: scale(1) translate(-50%,-150%);
+            transform: scale(1) translate(-50%, 10px);
+        }
+        30% {
+            //transform: scale(1) translate(-50%,-50%);
+            transform: scale(1) translate(-50%, 10px);
+        }
+        70% {
+            //transform: scale(1) translate(-50%,-50%);
+            transform: scale(1) translate(-50%, 10px);
+        }
+        95% {
+            //transform: scale(1) translate(-50%,-50%);
+            transform: scale(1) translate(-50%, 26px);
+        }
+        100% {
+            //transform: scaleX(1.5) translate(-50%,140%);
+            transform: scale(1) translate(-50%, 10px);
+        }
+    }
+
+    @keyframes scrolly {
+        0% {
+            transform: translate3d(0, -150%, 0) rotateX(90deg) scale(0.5) skewX(3deg);
+        }
+        30% {
+            transform: translate3d(0, 0, 0) rotateX(0deg) scale(1) skewX(0deg);
+        }
+        70% {
+            transform: translate3d(0, 0, 0) rotateX(0deg) scale(1) skewX(0deg);
+        }
+        95% {
+            transform: translate3d(0, 50%, 0) rotateX(-90deg) scale(0.5) skewX(-3deg);
+        }
+        100% {
+            transform: translate3d(0, 50%, 0) rotateX(-90deg) scale(0.5) skewX(-3deg);
+        }
+    }
+}
+
+@media (max-width: 1350px) {
+    .container-about-me {
+        padding-top: 20px;
+
+        .container-info {
+            margin-right: 50px;
+        }
+
+        h1 {
+            font-size: 48px;
+        }
+
+        img {
+            margin-left: 50px;
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .container-about-me {
+        .container-info {
+            margin-right: 40px;
+        }
+        h1 {
+            font-size: 44px;
+        }
+
+        img {
+            height: 300px;
+            width: 300px;
+            margin-left: 40px;
+        }
+    }
+
+    .container-arrow {
+        padding-top: 80px;
+    }
+}
+
+@media (max-width: 950px) {
+    .container-about-me {
+        .container-info {
+            margin-right: 40px;
+        }
+
+        img {
+            margin-left: 40px;
+        }
+    }
+}
+
+@media (max-width: 860px) {
+    .container-about-me {
+        .container-info {
+            margin-right: 0px;
+        }
+
+        h1 {
+            font-size: 36px;
+        }
+
+        img {
+            height: 250px;
+            width: 250px;
+        }
+    }
+}
+
+@media (max-width: 750px) {
+    .container-about-me {
+        flex-direction: column-reverse;
+        justify-content: center;
+        padding-top: 40px;
+
+        h1 {
+            margin-bottom: 40px;
+        }
+
+        img {
+            margin-left: 0px;
+        }
+
+        .container-contactMe {
+            width: 40%;
+            margin-left: 30%;
+        }
+    }
+
+    .container-arrow {
+        img {
+            height: 50px;
+            width: 50px;
+            margin-bottom: 40px;
+        }
+    }
+}
+
+@media (max-width: 550px) {
+    .container-about-me {
+        h1 {
+            font-size: 32px;
+        }
+
+        img {
+            height: 200px;
+            width: 200px;
+        }
+
+        .container-contactMe {
+            margin-bottom: 10px;
+        }
+
+        .container-btn {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+
+@media (max-width: 420px) {
+    .container-about-me {
+        .container-contactMe {
+            width: 50%;
+            margin-left: 25%;
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 80px;
+            margin-top: 0px;
+        }
+
+        img {
+            margin-top: 0px;
+            margin-bottom: 20px;
+        }
+    }
+
+    .container-arrow {
+        img {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+@media (max-width: 380px) {
+    .container-about-me {
+        height: calc(90vh - 100px);
+
+        h1 {
+            font-size: 18px;
+            margin-bottom: 40px;
+        }
+        .container-contactMe {
+            width: 60%;
+            margin-left: 20%;
+        }
+
+        .center {
+            height: 40px;
+            width: 90px;
+        }
+
+        .btn {
+            height: 40px;
+            width: 90px;
+            font-size: 12px;
+        }
+
+        svg {
+            height: 40px;
+            width: 90px;
+        }
+
+        img {
+            height: 150px;
+            width: 150px;
+        }
+    }
+
+    .container-arrow {
+        $circle-w: 50px;
+
+        .ico {
+            height: $circle-w;
+            width: $circle-w;
+
+            .circle {
+                height: $circle-w;
+                width: $circle-w;
+            }
+        }
+    }
+}
+
+@media (max-height: 768px) {
+    .container {
+        .container-about-me {
+            height: 100%;
+            padding-top: 120px;
+            img {
+                height: 200px;
+                width: 200px;
+            }
+        }
+
+        .container-arrow {
+            padding-top: 150px;
+            img {
+                height: 50px;
+                width: 50px;
+                margin-top: 40px;
+                margin-bottom: 40px;
+            }
+        }
+    }
+}
+
+@media (max-height: 412px) {
+    .container {
+        .container-about-me {
+            padding-top: 80px;
+        }
+    }
+}

@@ -23,7 +23,7 @@ describe('AppComponent', () => {
   it(`should have as title 'michaelsoquat'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('michaelsoquat');
+   
   });
 
   it('should render title', () => {
