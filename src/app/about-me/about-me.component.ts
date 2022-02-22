@@ -9,7 +9,6 @@ export class AboutMeComponent implements OnInit {
   showDescription = true;
   currentDescription = ['Front End Developer', 'Game Developer', 'Web Designer', 'Your Choice:)']
   currentPositionDescription = 0;
-  change = document.getElementById('changeDescription');
   constructor() { }
 
   ngOnInit(): void {

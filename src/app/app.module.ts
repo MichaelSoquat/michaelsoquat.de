@@ -7,6 +7,7 @@ import { MenuComponent } from './menu/menu.component';
 import { ImprintComponent } from './imprint/imprint.component';
 import { DataProtectionComponent } from './data-protection/data-protection.component';
 import { AboutMeComponent } from './about-me/about-me.component';
+import { MySkillsComponent } from './my-skills/my-skills.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { AboutMeComponent } from './about-me/about-me.component';
     ImprintComponent,
     DataProtectionComponent,
     AboutMeComponent,
+    MySkillsComponent,
   
   ],
   imports: [
