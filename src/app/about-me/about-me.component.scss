@@ -9,18 +9,26 @@
     white-space: nowrap; /* Keeps the content on a single line */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: 0.15em; /* Adjust as needed */
-    animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
+    animation: typing 7s steps(50, end), blink-caret 0.75s step-end infinite;
+    
 }
 
 /* The typing effect */
 @keyframes typing {
-    from {
+    0% {
         width: 0;
     }
-    to {
+    40% {
         width: 100%;
     }
+    60% {
+        width: 100%;
+    }
+    100% {
+        width: 0;
+    }
 }
+
 
 /* The typewriter cursor effect */
 @keyframes blink-caret {
@@ -67,6 +75,7 @@
         display: block;
         margin-right: 80px;
         animation: animationLeft 500ms ease-in-out;
+        width: 50%;
     }
 
     h1 {
@@ -163,7 +172,7 @@
         background-color: $body-bg;
     }
 
-    .ico {
+    .icon {
         margin: 0 auto;
         text-align: center;
         width: $circle-w;
@@ -219,7 +228,8 @@
         }
     }
 
-
+    // keyframes for arrow animation
+    
     @keyframes blob-1-anim {
         0% {
             transform: translateX(-50%) translateY(0);
@@ -237,23 +247,18 @@
 
     @keyframes blob-2-anim {
         0% {
-            //transform: scale(1) translate(-50%,-150%);
             transform: scale(1) translate(-50%, 10px);
         }
         30% {
-            //transform: scale(1) translate(-50%,-50%);
             transform: scale(1) translate(-50%, 10px);
         }
         70% {
-            //transform: scale(1) translate(-50%,-50%);
             transform: scale(1) translate(-50%, 10px);
         }
         95% {
-            //transform: scale(1) translate(-50%,-50%);
             transform: scale(1) translate(-50%, 26px);
         }
         100% {
-            //transform: scaleX(1.5) translate(-50%,140%);
             transform: scale(1) translate(-50%, 10px);
         }
     }
@@ -277,228 +282,3 @@
     }
 }
 
-@media (max-width: 1350px) {
-    .container-about-me {
-        padding-top: 20px;
-
-        .container-info {
-            margin-right: 50px;
-        }
-
-        h1 {
-            font-size: 48px;
-        }
-
-        img {
-            margin-left: 50px;
-        }
-    }
-}
-
-@media (max-width: 1000px) {
-    .container-about-me {
-        .container-info {
-            margin-right: 40px;
-        }
-        h1 {
-            font-size: 44px;
-        }
-
-        img {
-            height: 300px;
-            width: 300px;
-            margin-left: 40px;
-        }
-    }
-
-    .container-arrow {
-        padding-top: 80px;
-    }
-}
-
-@media (max-width: 950px) {
-    .container-about-me {
-        .container-info {
-            margin-right: 40px;
-        }
-
-        img {
-            margin-left: 40px;
-        }
-    }
-}
-
-@media (max-width: 860px) {
-    .container-about-me {
-        .container-info {
-            margin-right: 0px;
-        }
-
-        h1 {
-            font-size: 36px;
-        }
-
-        img {
-            height: 250px;
-            width: 250px;
-        }
-    }
-}
-
-@media (max-width: 750px) {
-    .container-about-me {
-        flex-direction: column-reverse;
-        justify-content: center;
-        padding-top: 40px;
-
-        h1 {
-            margin-bottom: 40px;
-        }
-
-        img {
-            margin-left: 0px;
-        }
-
-        .container-contactMe {
-            width: 40%;
-            margin-left: 30%;
-        }
-    }
-
-    .container-arrow {
-        img {
-            height: 50px;
-            width: 50px;
-            margin-bottom: 40px;
-        }
-    }
-}
-
-@media (max-width: 550px) {
-    .container-about-me {
-        h1 {
-            font-size: 32px;
-        }
-
-        img {
-            height: 200px;
-            width: 200px;
-        }
-
-        .container-contactMe {
-            margin-bottom: 10px;
-        }
-
-        .container-btn {
-            width: 100%;
-            display: flex;
-            justify-content: center;
-        }
-    }
-}
-
-@media (max-width: 420px) {
-    .container-about-me {
-        .container-contactMe {
-            width: 50%;
-            margin-left: 25%;
-        }
-        h1 {
-            font-size: 24px;
-            margin-bottom: 80px;
-            margin-top: 0px;
-        }
-
-        img {
-            margin-top: 0px;
-            margin-bottom: 20px;
-        }
-    }
-
-    .container-arrow {
-        img {
-            margin-bottom: 30px;
-        }
-    }
-}
-
-@media (max-width: 380px) {
-    .container-about-me {
-        height: calc(90vh - 100px);
-
-        h1 {
-            font-size: 18px;
-            margin-bottom: 40px;
-        }
-        .container-contactMe {
-            width: 60%;
-            margin-left: 20%;
-        }
-
-        .center {
-            height: 40px;
-            width: 90px;
-        }
-
-        .btn {
-            height: 40px;
-            width: 90px;
-            font-size: 12px;
-        }
-
-        svg {
-            height: 40px;
-            width: 90px;
-        }
-
-        img {
-            height: 150px;
-            width: 150px;
-        }
-    }
-
-    .container-arrow {
-        $circle-w: 50px;
-
-        .ico {
-            height: $circle-w;
-            width: $circle-w;
-
-            .circle {
-                height: $circle-w;
-                width: $circle-w;
-            }
-        }
-    }
-}
-
-@media (max-height: 768px) {
-    .container {
-        .container-about-me {
-            height: 100%;
-            padding-top: 120px;
-            img {
-                height: 200px;
-                width: 200px;
-            }
-        }
-
-        .container-arrow {
-            padding-top: 150px;
-            img {
-                height: 50px;
-                width: 50px;
-                margin-top: 40px;
-                margin-bottom: 40px;
-            }
-        }
-    }
-}
-
-@media (max-height: 412px) {
-    .container {
-        .container-about-me {
-            padding-top: 80px;
-        }
-    }
-}
