@@ -23,9 +23,9 @@ export class AboutMeComponent implements OnInit {
       this.showDescription = false;
       setTimeout(() => {
         this.showDescription = true;
-      }, 0.001)
+      }, 0.0000001)
 
-    }, 7000)
+    }, 6000)
   }
 
   toMySkills() {

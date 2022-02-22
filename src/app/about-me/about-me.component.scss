@@ -4,19 +4,15 @@
 }
 
 #changeDescription {
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: 0.10em solid #fa2759; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: 0.15em; /* Adjust as needed */
-    animation: typing 7s steps(50, end), blink-caret 0.75s step-end infinite;
-    
+    animation: ctype 6s steps(21);
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    margin: 0;
 }
-
-/* The typing effect */
-@keyframes typing {
+@keyframes ctype {
     0% {
-        width: 0;
+        width: 0%;
     }
     40% {
         width: 100%;
@@ -25,19 +21,7 @@
         width: 100%;
     }
     100% {
-        width: 0;
-    }
-}
-
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-    from,
-    to {
-        border-color: transparent;
-    }
-    50% {
-        border-color: #fa2759;
+        width: 0%;
     }
 }
 
@@ -82,7 +66,6 @@
         font-size: 64px;
         color: white;
         margin-bottom: 80px;
-        
     }
 
     .my-name {
@@ -229,7 +212,7 @@
     }
 
     // keyframes for arrow animation
-    
+
     @keyframes blob-1-anim {
         0% {
             transform: translateX(-50%) translateY(0);
@@ -281,4 +264,3 @@
         }
     }
 }
-
