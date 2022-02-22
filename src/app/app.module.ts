@@ -8,6 +8,11 @@ import { ImprintComponent } from './imprint/imprint.component';
 import { DataProtectionComponent } from './data-protection/data-protection.component';
 import { MySkillsComponent } from './main/my-skills/my-skills.component';
 import { AboutMeComponent } from './main/about-me/about-me.component';
+import { MyWorkComponent } from './my-work/my-work.component';
+
+
+
+
 
 
 
@@ -20,6 +25,11 @@ import { AboutMeComponent } from './main/about-me/about-me.component';
     MainComponent,
     MySkillsComponent,
     AboutMeComponent,
+    MyWorkComponent,
+    
+    
+    
+    
     
   
   ],
