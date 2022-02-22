@@ -1,13 +1,15 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { MainComponent } from './main/main.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
 import { ImprintComponent } from './imprint/imprint.component';
 import { DataProtectionComponent } from './data-protection/data-protection.component';
-import { AboutMeComponent } from './about-me/about-me.component';
-import { MySkillsComponent } from './my-skills/my-skills.component';
+import { MySkillsComponent } from './main/my-skills/my-skills.component';
+import { AboutMeComponent } from './main/about-me/about-me.component';
+
+
 
 @NgModule({
   declarations: [
@@ -15,8 +17,10 @@ import { MySkillsComponent } from './my-skills/my-skills.component';
     MenuComponent,
     ImprintComponent,
     DataProtectionComponent,
-    AboutMeComponent,
+    MainComponent,
     MySkillsComponent,
+    AboutMeComponent,
+    
   
   ],
   imports: [
