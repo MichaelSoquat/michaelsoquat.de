@@ -1,0 +1,20 @@
+<div id="contactMe" class="container-contact">
+    <div class="contact">
+        <h1 >Contact me.</h1>
+        <span >Just fill out the contact form below or send a mail to
+            <span class="email-contact">michael.soquat@gmx.de</span></span>
+        <form action="/send_mail.php" method="POST">
+            <span>Name<span class="must-have">*</span></span>
+            <input name="name" type="text" placeholder="Enter your name" required>
+            <span>Email address<span class="must-have">*</span></span>
+            <input name="email" type="email" placeholder="Enter your Email address" required>
+            <span>Message<span class="must-have">*</span></span>
+            <textarea name="message" placeholder="Enter your message" required></textarea>
+            <div class="center">
+                <button type="submit" class="btn">
+                    Send
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

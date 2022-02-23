@@ -105,26 +105,13 @@
         transition: 500ms ease-in-out;
     }
 
-    svg {
-        position: absolute;
-        left: 0;
-        top: 0;
-        fill: none;
-        stroke: #fff;
-        stroke-dasharray: 300 480;
-        stroke-dashoffset: 300;
-        transition: 500ms ease-in-out;
-    }
-
+    
     .btn:hover {
         transition: 1s ease-in-out;
         background: #2dfcd960;
         color: white;
     }
 
-    .btn:hover svg {
-        stroke-dashoffset: -480;
-    }
 
     .btn span {
         color: white;

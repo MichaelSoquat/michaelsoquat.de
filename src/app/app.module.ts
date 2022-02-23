@@ -10,6 +10,7 @@ import { MySkillsComponent } from './main/my-skills/my-skills.component';
 import { AboutMeComponent } from './main/about-me/about-me.component';
 import { MyWorkComponent } from './my-work/my-work.component';
 import { DescriptionAboutMeComponent } from './description-about-me/description-about-me.component';
+import { ContactMeComponent } from './contact-me/contact-me.component';
 
 
 
@@ -28,6 +29,7 @@ import { DescriptionAboutMeComponent } from './description-about-me/description-
     AboutMeComponent,
     MyWorkComponent,
     DescriptionAboutMeComponent,
+    ContactMeComponent,
     
     
     
