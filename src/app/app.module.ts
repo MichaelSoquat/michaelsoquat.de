@@ -11,6 +11,7 @@ import { AboutMeComponent } from './main/about-me/about-me.component';
 import { MyWorkComponent } from './my-work/my-work.component';
 import { DescriptionAboutMeComponent } from './description-about-me/description-about-me.component';
 import { ContactMeComponent } from './contact-me/contact-me.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 
@@ -30,6 +31,7 @@ import { ContactMeComponent } from './contact-me/contact-me.component';
     MyWorkComponent,
     DescriptionAboutMeComponent,
     ContactMeComponent,
+    FooterComponent,
     
     
     
