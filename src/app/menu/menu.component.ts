@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 export class MenuComponent implements OnInit {
   @Input() darkMode = true;
   
-  constructor() { }
+  constructor(public router: Router) { }
 
   ngOnInit(): void {
   }

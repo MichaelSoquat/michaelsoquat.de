@@ -1,9 +1,9 @@
 <app-menu [darkMode]="router.url !=='/'"></app-menu>
 <div [class.container]="router.url !== '/'">
     <router-outlet></router-outlet>
-    <app-my-work></app-my-work>
-    <app-description-about-me></app-description-about-me>
-    <app-contact-me></app-contact-me>
-    <app-footer></app-footer>
+    <app-my-work *ngIf="router.url == '/'"></app-my-work>
+    <app-description-about-me *ngIf="router.url == '/'"></app-description-about-me>
+    <app-contact-me *ngIf="router.url == '/'"></app-contact-me>
+    
 </div>
-
+<app-footer [class.absolute]="router.url =='/imprint'"></app-footer>
