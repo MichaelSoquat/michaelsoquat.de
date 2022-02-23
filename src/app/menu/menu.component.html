@@ -5,12 +5,10 @@
     <img *ngIf="darkMode" routerLink="/" src="assets/img/logoBlack.png">
 
     <div class="container-link">
-        <a class="btn" routerLink="/">Home</a>
-        <a class="btn" href="#">My Skills</a>
-        <a class="btn" href="#">My Work</a>
-        <a class="btn" href="#">About Me</a>
-        <a class="btn" href="#">Contact Me</a>
-        <a class="btn" routerLink="/imprint">Imprint</a>
-
+        <a (click)="toMyContact()" class="btn" routerLink="/">Home</a>
+        <a (click)="toMyContact()" class="btn" >My Skills</a>
+        <a (click)="toMyContact()" class="btn" >My Work</a>
+        <a (click)="toMyContact()" class="btn" >About Me</a>
+        <a (click)="toMyContact()" class="btn"  >Contact Me</a>
     </div>
 </header>
