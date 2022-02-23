@@ -105,6 +105,7 @@
 
             $speed: 0.5s;
             &:hover {
+                
                 transform: scaleX(1.05);
                 .container-Link {
                     cursor: pointer;
@@ -140,6 +141,7 @@
                             &:after {
                                 opacity: 1;
                                 transform: translateY(0) rotateX(0);
+                                
                             }
 
                             &:before {
@@ -189,7 +191,7 @@
             height: 350px;
             width: 500px;
             margin: 25px;
-            background-image: url("/assets/img/restaurant.jpg");
+            background-image: url("/assets/img/dönerparadies.png");
             background-size: 100%;
             background-repeat: no-repeat;
             background-position: center;
@@ -281,10 +283,10 @@
             height: 350px;
             width: 500px;
             margin: 25px;
-            background-image: url("/assets/img/pokomon.jpg");
+            background-image: url("/assets/img/Pokemon.png");
             background-size: cover;
+            background-position: top;
             background-repeat: no-repeat;
-            background-position: center;
             font-size: 0px;
             box-shadow: 5px 5px 21px -6px rgba(255, 255, 255, 0.57);
 
@@ -375,7 +377,7 @@
             height: 350px;
             width: 500px;
             margin: 25px;
-            background-image: url("/assets/img/join.jpg");
+            background-image: url("/assets/img/Join.png");
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
@@ -467,7 +469,7 @@
             height: 350px;
             width: 500px;
             margin: 25px;
-            background-image: url("/assets/img/mysite.jpg");
+            background-image: url("/assets/img/Homepage.png");
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
