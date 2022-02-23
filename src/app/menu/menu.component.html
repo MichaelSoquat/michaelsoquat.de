@@ -5,11 +5,14 @@
     <img *ngIf="darkMode" routerLink="/" src="assets/img/logoBlack.png">
 
     <div class="container-link">
-        <a (click)="toMyHome()" [class.btnImprint]="router.url !== '/'" [class.btn]="router.url == '/'"
-            routerLink="/">Home</a>
+        <a (click)="toMyHome()" *ngIf="router.url =='/'" class="btn" routerLink="/">Home</a>
         <a (click)="toMySkill()" class="btn" *ngIf="router.url=='/'">My Skills</a>
         <a (click)="toMyWork()" class="btn" *ngIf="router.url=='/'">My Work</a>
         <a (click)="toAboutMe()" class="btn" *ngIf="router.url=='/'">About Me</a>
         <a (click)="toMyContact()" class="btn" *ngIf="router.url=='/'">Contact Me</a>
+
+        <a (click)="toMyHome()" *ngIf="router.url !=='/'" [class.btnImprint]="router.url !== '/'"
+            routerLink="/">Home</a>
+
     </div>
 </header>
