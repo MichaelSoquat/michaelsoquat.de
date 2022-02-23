@@ -22,19 +22,22 @@ export class MenuComponent implements OnInit {
     });
   }
 
+  toMyHome() {
+    document.getElementById('home')?.scrollIntoView({ block: 'center' });
+  }
   toMySkill() {
-    document.getElementById('contactMe')?.scrollIntoView({ block: 'center' });
+    document.getElementById('myskills')?.scrollIntoView({ block: 'start' });
   }
 
   toMyWork() {
-    document.getElementById('contactMe')?.scrollIntoView({ block: 'center' });
+    document.getElementById('myWork')?.scrollIntoView({ block: 'start' });
   }
 
   toAboutMe() {
-    document.getElementById('contactMe')?.scrollIntoView({ block: 'center' });
+    document.getElementById('aboutMe')?.scrollIntoView({ block: 'start' });
   }
 
   toMyContact() {
-    document.getElementById('contactMe')?.scrollIntoView({ block: 'center' });
+    document.getElementById('contactMe')?.scrollIntoView({ block: 'start' });
   }
 }

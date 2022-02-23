@@ -49,7 +49,9 @@
 
 .container-about-me {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    padding-left: 120px;
+    padding-right: 120px;
     align-items: center;
     background-color: black;
     padding-top: 120px;
@@ -59,7 +61,6 @@
         display: block;
         margin-right: 80px;
         animation: animationLeft 500ms ease-in-out;
-        width: 50%;
     }
 
     h1 {

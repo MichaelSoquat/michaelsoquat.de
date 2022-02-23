@@ -32,6 +32,6 @@ export class AboutMeComponent implements OnInit {
   }
 
   toMyContact() {
-    document.getElementById('contactMe')?.scrollIntoView({ block: 'end' });
+    document.getElementById('contactMe')?.scrollIntoView({ block: 'start' });
   }
 }
