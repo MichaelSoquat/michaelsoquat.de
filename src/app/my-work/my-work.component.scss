@@ -46,7 +46,6 @@
             transition: 500ms ease-in-out;
         }
 
-
         .btn:hover {
             transition: 0.7s ease-in-out;
             background: #fa275893;
@@ -91,7 +90,6 @@
 
             $speed: 0.5s;
             &:hover {
-                
                 transform: scaleX(1.05);
                 .container-Link {
                     cursor: pointer;
@@ -127,7 +125,6 @@
                             &:after {
                                 opacity: 1;
                                 transform: translateY(0) rotateX(0);
-                                
                             }
 
                             &:before {
@@ -538,5 +535,321 @@
                 }
             }
         }
+    }
+}
+
+@media (max-width: 1150px) {
+    .container-my-work {
+        .container-picture {
+            img {
+                height: 250px;
+                width: 400px;
+            }
+
+            .sharky {
+                height: 250px;
+                width: 400px;
+            }
+
+            .angularSite {
+                height: 250px;
+                width: 400px;
+            }
+
+            .join {
+                height: 250px;
+                width: 400px;
+            }
+
+            .lieferando {
+                height: 250px;
+                width: 400px;
+            }
+
+            .pokedex {
+                height: 250px;
+                width: 400px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .container-my-work {
+        height: unset;
+
+        .container-picture {
+            img {
+                height: 200px;
+                width: 300px;
+            }
+
+            .sharky {
+                height: 200px;
+                width: 300px;
+                &:hover {
+                    .container-Link {
+                        font-size: 18px;
+                        .btn-flip {
+                            width: 120px;
+                            height: 40px;
+                            line-height: 40px;
+                            font-size: 10px;
+
+                            &:before {
+                                line-height: 40px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .angularSite {
+                height: 200px;
+                width: 300px;
+
+                &:hover {
+                    .container-Link {
+                        font-size: 18px;
+                        .btn-flip {
+                            width: 120px;
+                            height: 40px;
+                            line-height: 40px;
+                            font-size: 10px;
+
+                            &:before {
+                                line-height: 40px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .join {
+                height: 200px;
+                width: 300px;
+
+                &:hover {
+                    .container-Link {
+                        font-size: 18px;
+                        .btn-flip {
+                            width: 120px;
+                            height: 40px;
+                            line-height: 40px;
+                            font-size: 10px;
+
+                            &:before {
+                                line-height: 40px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .lieferando {
+                height: 200px;
+                width: 300px;
+
+                &:hover {
+                    .container-Link {
+                        font-size: 18px;
+                        .btn-flip {
+                            width: 120px;
+                            height: 40px;
+                            line-height: 40px;
+                            font-size: 10px;
+
+                            &:before {
+                                line-height: 40px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .pokedex {
+                height: 200px;
+                width: 300px;
+
+                &:hover {
+                    .container-Link {
+                        font-size: 18px;
+                        .btn-flip {
+                            width: 120px;
+                            height: 40px;
+                            line-height: 40px;
+                            font-size: 10px;
+
+                            &:before {
+                                line-height: 40px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .container-my-work {
+        .selection-switches {
+            .center {
+                margin-left: 5px;
+                margin-right: 5px;
+            }
+        }
+    }
+}
+
+@media (max-width: 780px) {
+    .container-my-work {
+        h2 {
+            margin-bottom: 60px;
+        }
+        .selection-switches {
+            flex-direction: column;
+            margin-bottom: 40px;
+
+            .center {
+                margin-bottom: 20px;
+            }
+        }
+
+        .container-picture {
+            flex-direction: column;
+        }
+    }
+}
+
+@media (max-width: 380px) {
+    .container-my-work {
+        .container-picture {
+            .sharky {
+                margin-left: 0px;
+                margin-right: 0px;
+            }
+
+            .angularSite {
+                margin-left: 0px;
+                margin-right: 0px;
+            }
+
+            .join {
+                margin-left: 0px;
+                margin-right: 0px;
+            }
+
+            .lieferando {
+                margin-left: 0px;
+                margin-right: 0px;
+            }
+
+            .pokedex {
+                margin-left: 0px;
+                margin-right: 0px;
+            }
+        }
+    }
+}
+
+@media (max-width: 350px) {
+    .container-my-work {
+        .container-picture {
+            img {
+                height: 150px;
+                width: 200px;
+            }
+
+            .sharky {
+                height: 150px;
+                width: 200px;
+                &:hover {
+                    .container-Link {
+                        font-size: 14px;
+                        .btn-flip {
+                            font-size: 10px;
+                            margin-top: 20px;
+                        }
+                    }
+                }
+            }
+
+            .angularSite {
+                height: 150px;
+                width: 200px;
+                &:hover {
+                    .container-Link {
+                        font-size: 14px;
+                        .btn-flip {
+                            font-size: 10px;
+                            margin-top: 20px;
+                        }
+                    }
+                }
+            }
+
+            .join {
+                height: 150px;
+                width: 200px;
+                &:hover {
+                    .container-Link {
+                        font-size: 14px;
+                        .btn-flip {
+                            font-size: 10px;
+                            margin-top: 20px;
+                        }
+                    }
+                }
+            }
+
+            .lieferando {
+                height: 150px;
+                width: 200px;
+                &:hover {
+                    .container-Link {
+                        font-size: 14px;
+                        .btn-flip {
+                            font-size: 10px;
+                            margin-top: 20px;
+                        }
+                    }
+                }
+            }
+
+            .pokedex {
+                height: 150px;
+                width: 200px;
+                &:hover {
+                    .container-Link {
+                        font-size: 12px;
+                        .btn-flip {
+                            font-size: 10px;
+                            margin-top: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.cplusplus {
+    height: 150px;
+    width: 200px;
+    &:hover {
+        .container-Link {
+            font-size: 12px;
+            .btn-flip {
+                font-size: 10px;
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+@media (max-height: 1024px) {
+    .container-my-work {
+        height: 100%;
     }
 }
