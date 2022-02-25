@@ -23,7 +23,6 @@
         margin-bottom: 20px;
         font-size: 18px;
         color: white;
-        
 
         .email-contact {
             color: #2dfcd8;
@@ -101,3 +100,50 @@
     }
 }
 
+@media (max-width: 900px) {
+    .container-contact {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 850px) {
+    .container-contact {
+        .contact {
+            align-items: center;
+        }
+        span {
+            width: 80%;
+        }
+
+        form {
+            width: 80%;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .container-contact {
+        height: 100%;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        
+        h1 {
+            font-size: 36px;
+        }
+
+        span {
+            width: 90%;
+        }
+
+        form {
+            width: 90%;
+        }
+    }
+}
+
+@media (max-height: 768px) {
+    .container-contact{
+        height: 100%;
+    }
+}

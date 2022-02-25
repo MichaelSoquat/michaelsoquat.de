@@ -90,7 +90,7 @@
     .center {
         width: 180px;
         height: 60px;
-        position: absolute;
+        
     }
 
     .btn {
@@ -106,13 +106,11 @@
         transition: 500ms ease-in-out;
     }
 
-    
     .btn:hover {
         transition: 0.7s ease-in-out;
         background: #2dfcd960;
         color: white;
     }
-
 
     .btn span {
         color: white;
@@ -255,219 +253,65 @@
     }
 }
 
-
-@media (max-width: 1450px) {
+@media (max-width: 1280px) {
     .container-about-me {
-        padding-top: 20px;
-
-        .container-info {
-            margin-right: 50px;
-        }
-
         h1 {
             font-size: 48px;
         }
 
         img {
-            margin-left: 50px;
-        }
-    }
-}
-
-@media (max-width: 1250px) {
-    .container-about-me {
-        .container-info {
-            margin-right: 40px;
-        }
-        h1 {
-            font-size: 44px;
-        }
-
-        img {
-            height: 300px;
             width: 300px;
-            margin-left: 40px;
+            height: 300px;
         }
     }
-
-    .container-arrow {
-        padding-top: 80px;
-    }
 }
-
 
 @media (max-width: 1100px) {
     .container-about-me {
-        .container-info {
-            margin-right: 0px;
-        }
-
-        h1 {
-            font-size: 36px;
-        }
-
-        img {
-            height: 250px;
-            width: 250px;
-        }
+        padding-left: 40px;
+        padding-right: 40px;
     }
 }
 
-@media (max-width: 950px) {
+@media (max-width: 900px) {
+
+    .container {
+        justify-content: center;
+    }
     .container-about-me {
         flex-direction: column-reverse;
-        justify-content: center;
-        padding-top: 40px;
+        
+    }
+
+    .container-info {
+        width: 100%;
 
         h1 {
-            margin-bottom: 40px;
+            width: 490px;
+            margin-left: 20px;
         }
-
-        img {
-            margin-left: 0px;
-        }
-
-        .container-contactMe {
-            width: 40%;
-            margin-left: 30%;
-        }
+        display: flex !important;
+        flex-direction: column;
+        align-items: center !important;
     }
 
     .container-arrow {
-        img {
-            height: 50px;
-            width: 50px;
-            margin-bottom: 40px;
-        }
+        display: none;
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 550px) {
     .container-about-me {
-        h1 {
-            font-size: 32px;
-        }
-
+        padding-left: 20px;
+        padding-right: 20px;
         img {
-            height: 200px;
-            width: 200px;
-        }
-
-        .container-contactMe {
-            margin-bottom: 10px;
-        }
-
-        .container-btn {
-            width: 100%;
-            display: flex;
-            justify-content: center;
-        }
-    }
-}
-
-@media (max-width: 580px) {
-    .container-about-me {
-        .container-contactMe {
-            width: 50%;
-            margin-left: 25%;
+            width: 250px;
+            height: 250px;
         }
         h1 {
-            font-size: 24px;
-            margin-bottom: 80px;
-            margin-top: 0px;
-        }
-
-        img {
-            margin-top: 0px;
-            margin-bottom: 20px;
-        }
-    }
-
-    .container-arrow {
-        img {
-            margin-bottom: 30px;
+            font-size: 36px;
+            width: 370px;
+            margin-left: 20px;
         }
     }
 }
-
-@media (max-width: 580px) {
-    .container-about-me {
-        height: calc(90vh - 100px);
-
-        h1 {
-            font-size: 18px;
-            margin-bottom: 40px;
-        }
-        .container-contactMe {
-            width: 60%;
-            margin-left: 20%;
-        }
-
-        .center {
-            height: 40px;
-            width: 90px;
-        }
-
-        .btn {
-            height: 40px;
-            width: 90px;
-            font-size: 12px;
-        }
-
-        svg {
-            height: 40px;
-            width: 90px;
-        }
-
-        img {
-            height: 150px;
-            width: 150px;
-        }
-    }
-
-    .container-arrow {
-        padding-top: 100px !important;
-        margin-bottom: 0;
-        $circle-w: 50px;
-        .svg {
-            width: 50px;
-            height: 50px;
-        }
-        .icon {
-            height: 50px;
-        }
-        .circle {
-            height: 50px !important;
-        }
-        .circle-main {
-            height: 50px !important;
-        }
-        
-        
-        
-    }
-}
-
-@media (max-height: 768px) {
-    .container {
-        .container-about-me {
-            height: 100%;
-            padding-top: 120px;
-            img {
-                height: 200px;
-                width: 200px;
-            }
-        }
-
-        .container-arrow {
-            padding-top: 150px;
-            img {
-                height: 50px;
-                width: 50px;
-                margin-top: 40px;
-                margin-bottom: 40px;
-            }
-        }
-    }
-}
-
