@@ -8,18 +8,28 @@ import { Router } from '@angular/router';
 })
 export class MenuComponent implements OnInit {
   @Input() darkMode = true;
-  
+  sideBarOpen = false;
+
   constructor(public router: Router) { }
 
   ngOnInit(): void {
   }
-  
+
   gotoTop() {
     window.scroll({
       top: 0,
       left: 0,
       behavior: 'smooth',
     });
+  }
+  
+  openSideBar() {
+    console.log('works');
+    if (this.sideBarOpen == false) {
+      this.sideBarOpen = true;
+    } else {
+      this.sideBarOpen = false;
+    }
   }
 
   toMyHome() {

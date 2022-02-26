@@ -14,5 +14,25 @@
         <a (click)="toMyHome()" *ngIf="router.url !=='/'" [class.btnImprint]="router.url !== '/'"
             routerLink="/">Home</a>
 
+
+
+    </div>
+    <div (click)="openSideBar()" class="burger-icon-container">
+        <div class="burger-icon"></div>
+        <div class="burger-icon"></div>
+        <div class="burger-icon"></div>
+    </div>
+
+    <div *ngIf="sideBarOpen" (click)="openSideBar()" class="side-bar-container">
+
+        <a (click)="toMyHome()" *ngIf="router.url =='/'" class="btn-mobile" routerLink="/">Home</a>
+        <a (click)="toMySkill()" class="btn-mobile" *ngIf="router.url=='/'">My Skills</a>
+        <a (click)="toMyWork()" class="btn-mobile" *ngIf="router.url=='/'">My Work</a>
+        <a (click)="toAboutMe()" class="btn-mobile" *ngIf="router.url=='/'">About Me</a>
+        <a (click)="toMyContact()" class="btn-mobile" *ngIf="router.url=='/'">Contact Me</a>
+
+        <a (click)="toMyHome()" *ngIf="router.url !=='/'" [class.btnImprint]="router.url !== '/'"
+            routerLink="/">Home</a>
+
     </div>
 </header>
