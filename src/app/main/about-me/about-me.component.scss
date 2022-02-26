@@ -287,10 +287,15 @@
 
 @media (max-width: 900px) {
     .container {
-        justify-content: center;
+        height: 100%;
+        padding-top: 210px;
+        padding-bottom: 120px;
     }
     .container-about-me {
         flex-direction: column-reverse;
+        padding-top: 0;
+        height: 100%;
+        
     }
 
     .container-info {
@@ -344,20 +349,5 @@
     }
 }
 
-@media (max-height: 640px) {
-    .container {
-        
-            padding-top: 40px;
-        
-    }
-}
-
-@media (max-height: 600px) {
-    .container {
-        
-            padding-top: 80px;
-        
-    }
-}
 
 
