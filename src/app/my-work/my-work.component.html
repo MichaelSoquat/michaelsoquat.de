@@ -1,53 +1,53 @@
 <div id="myWork" class="container-my-work">
     <h2>My Work</h2>
     <div class="selection-switches">
-        <div id="all" class="center">
-            <button class="btn">
+        <div  id="all" class="center">
+            <button (click) ="showAllWork()" class="btn">
                 All
             </button>
         </div>
         <div id="angular" class="center">
-            <button class="btn">
+            <button (click) ="showAngularWork()" class="btn">
                 Angular
             </button>
         </div>
         <div id="javaScript" class="center">
-            <button class="btn">
+            <button (click) ="showJsWork()" class="btn">
                 JavaScript
             </button>
         </div>
         
     </div>
     <div id="containerJS" class="container-picture">
-        <div  class="join">
+        <div *ngIf = "js" class="join">
             <div class="container-Link">
                 Coordinate your work with Join
                 <a href="http://michael-soquat.developerakademie.net/Kanban-Board/add-task.html" class="btn-flip" data-back="Join"
                     data-front="Try it out"></a>
             </div>
         </div>
-        <div class="pokedex">
+        <div *ngIf = "js" class="pokedex">
             <div class="container-Link">
                 Collection of pokemons
                 <a href="http://michael-soquat.developerakademie.net/Pokedex/index.html" class="btn-flip" data-back="Pokedex" data-front="Try it out"></a>
             </div>
         </div>
     </div>
-    <div id="containerJavaScript" class="container-picture">
+    <div *ngIf = "js" id="containerJavaScript" class="container-picture">
         <div class="lieferando">
             <div class="container-Link">
                 Restaurant site
                 <a href="http://michael-soquat.developerakademie.net/D%C3%B6nerParadies/index.html" class="btn-flip" data-back="Döner Paradies" data-front="Try it out"></a>
             </div>
         </div>
-        <div class="sharky">
+        <div *ngIf = "js" class="sharky">
             <div class="container-Link">
                 2D Game
                 <a href="http://michael-soquat.developerakademie.net/Sharky/index.html" class="btn-flip" data-back="Sharky" data-front="Try it out"></a>
             </div>
         </div>
     </div>
-    <div id="containerAngular" class="container-picture">
+    <div *ngIf = "angular" id="containerAngular" class="container-picture">
         <div class="angularSite">
             <div class="container-Link">
                 My Homepage

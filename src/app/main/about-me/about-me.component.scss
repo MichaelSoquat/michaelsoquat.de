@@ -90,7 +90,6 @@
     .center {
         width: 180px;
         height: 60px;
-        
     }
 
     .btn {
@@ -274,13 +273,11 @@
 }
 
 @media (max-width: 900px) {
-
     .container {
         justify-content: center;
     }
     .container-about-me {
         flex-direction: column-reverse;
-        
     }
 
     .container-info {
@@ -315,3 +312,39 @@
         }
     }
 }
+
+@media (max-width: 400px) {
+    .container-about-me {
+        h1 {
+            font-size: 32px;
+            width: 300px;
+        }
+    }
+}
+
+@media (max-width: 340px) {
+    .container-about-me {
+        h1 {
+            font-size: 28px;
+            width: 280px;
+        }
+    }
+}
+
+@media (max-height: 640px) {
+    .container {
+        
+            padding-top: 40px;
+        
+    }
+}
+
+@media (max-height: 600px) {
+    .container {
+        
+            padding-top: 80px;
+        
+    }
+}
+
+

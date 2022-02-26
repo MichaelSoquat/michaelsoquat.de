@@ -6,10 +6,27 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./my-work.component.scss']
 })
 export class MyWorkComponent implements OnInit {
-
+  angular = true;
+  js = true;
   constructor() { }
 
   ngOnInit(): void {
   }
+
+  showAllWork() {
+    this.angular = true;
+    this.js = true;
+  }
+
+  showAngularWork() {
+    this.js = false;
+    this.angular = true;
+  }
+
+  showJsWork() {
+    this.angular = false;
+    this.js = true;
+  }
+
 
 }
