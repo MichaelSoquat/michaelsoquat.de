@@ -139,3 +139,10 @@ img {
         display: block;
     }
 }
+
+@media(max-width: 500px) {
+    header {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+}
