@@ -13,6 +13,10 @@ export class MyWorkComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  /**
+   * These functions check the buttons clicked and show the right work sections
+   */
+
   showAllWork() {
     this.angular = true;
     this.js = true;

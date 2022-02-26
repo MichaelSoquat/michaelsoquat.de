@@ -15,6 +15,11 @@ export class AboutMeComponent implements OnInit {
     this.updateDescription();
   }
 
+
+  /**
+   * This function is for showing the right ghost writer text
+   */
+  
   updateDescription() {
     setInterval(() => {
       this.currentPositionDescription++;
@@ -26,6 +31,8 @@ export class AboutMeComponent implements OnInit {
 
     }, 6000)
   }
+
+  // links to view
 
   toMySkills() {
     document.getElementById('myskills')?.scrollIntoView({ behavior: 'smooth' });

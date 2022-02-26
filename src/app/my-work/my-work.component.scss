@@ -1,3 +1,5 @@
+//general
+
 .container-my-work {
     background-color: black;
     display: flex;
@@ -59,9 +61,13 @@
         }
     }
 
+    // d-none
+
     .d-none {
         display: none;
     }
+
+    //my-work containers
 
     .container-picture {
         display: flex;
@@ -537,6 +543,8 @@
         }
     }
 }
+
+//medias
 
 @media (max-width: 1150px) {
     .container-my-work {

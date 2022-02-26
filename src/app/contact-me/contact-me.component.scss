@@ -1,3 +1,5 @@
+//general
+
 .container-contact {
     background-color: black;
     display: flex;
@@ -99,6 +101,8 @@
         display: none;
     }
 }
+
+// medias
 
 @media (max-width: 900px) {
     .container-contact {

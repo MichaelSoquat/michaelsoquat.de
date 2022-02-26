@@ -1,3 +1,5 @@
+//general
+
 .container-my-skills {
     background-color: #1a1a1a;
     display: flex;
@@ -15,6 +17,8 @@ h2 {
     font-size: 48px;
     color: white;
 }
+
+// single containers
 
 .container-skills {
     display: flex;
@@ -55,6 +59,8 @@ h2 {
         }
     }
 }
+
+// medias
 
 @media (max-width: 1000px) {
     .container-my-skills{

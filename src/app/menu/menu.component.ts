@@ -15,6 +15,8 @@ export class MenuComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  // scroll top
+
   gotoTop() {
     window.scroll({
       top: 0,
@@ -23,14 +25,21 @@ export class MenuComponent implements OnInit {
     });
   }
   
+  /**
+   * This function is for checking if open or close side bar
+   */
+
   openSideBar() {
-    console.log('works');
     if (this.sideBarOpen == false) {
       this.sideBarOpen = true;
     } else {
       this.sideBarOpen = false;
     }
   }
+
+  /**
+   * These functions are links and scroll into the view
+   */
 
   toMyHome() {
     document.getElementById('home')?.scrollIntoView({ block: 'center' });
