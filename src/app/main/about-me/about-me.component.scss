@@ -126,7 +126,14 @@
         font-weight: 100;
     }
 }
-
+.bgImg {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    animation: animationRight 500ms ease-in-out;
+    background-image: url("/assets/img/Soquat1.jpg");
+    background-size: cover;
+}
 //design arrow
 
 .container-arrow {
@@ -295,7 +302,6 @@
         flex-direction: column-reverse;
         padding-top: 0;
         height: 100%;
-        
     }
 
     .container-info {
@@ -348,6 +354,3 @@
         }
     }
 }
-
-
-
