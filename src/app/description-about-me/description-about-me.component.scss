@@ -2,8 +2,8 @@
 
 .container {
     background-color: #1a1a1a;
-    padding-bottom: 120px;
-    padding-top: 40px;
+    padding-bottom: 130px;
+    padding-top: 120px;
 }
 .container-explain {
     display: flex;
@@ -14,14 +14,17 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 80px;
+        margin-top: 0;
         width: 80%;
+        padding-bottom: 120px;
 
         .short-explain {
             font-size: 18px;
             color: white;
-            margin-left: 80px;
-            margin-bottom: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 100px;
         }
 
         h2 {
@@ -79,8 +82,6 @@
     background-size: cover;
     width: 250px;
     height: 250px;
-    margin-right: 80px;
-    margin-bottom: 80px;
 }
 
 // medias
@@ -90,45 +91,19 @@
         padding-left: 40px;
         padding-right: 40px;
     }
-}
-
-@media (max-width: 1024px) {
-    .container-explain {
-        .explain-me {
-            img {
-                width: 150px;
-                height: 150px;
-            }
-
-            .short-explain {
-                margin-left: 50px;
-            }
-        }
+    .short-explain {
+        margin-left: 0 !important;
     }
-
-    .container-my-journey {
-        .my-journey {
-            h4 {
-                font-size: 20px;
-            }
-
-            .my-journey-pic {
-                width: 50px;
-                height: 50px;
-            }
-        }
-    }
-}
-
-@media (max-width: 850px) {
     .container {
         height: unset;
         .container-explain {
             .explain-me {
                 flex-direction: column;
 
-                img {
+                .bgImg {
                     margin-right: 0px;
+                    width: 250px;
+                    height: 250px;
                 }
             }
         }
@@ -155,12 +130,25 @@
     }
 }
 
+.container-my-journey {
+    .my-journey {
+        h4 {
+            font-size: 20px;
+        }
+
+        .my-journey-pic {
+            width: 50px;
+            height: 50px;
+        }
+    }
+}
+
 @media (max-width: 420px) {
     .container-explain {
         .explain-me {
-            img {
-                height: 120px;
-                width: 120px;
+            .bgImg {
+                height: 200px;
+                width: 200px;
             }
         }
     }
